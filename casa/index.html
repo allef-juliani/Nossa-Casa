@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Casa dos Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="./2017-04-01_10.04.19.jpg" alt="Logo do Casal" class="logo" style="height: 455px; width: auto; border-radius: 50%;">
+            <h1>Nossa Casa dos Sonhos</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Introdução -->
+        <section class="intro">
+            <div class="image-container">
+                <img 
+                    src="https://jayamu.com.br/site/wp-content/uploads/2021/05/planta_baixa_3_filinha_mendes.jpeg" 
+                    alt="Nossa Casa - Planta 1" 
+                    class="side-image" 
+                    style="height: 455px; object-fit: cover; border-radius: 10px;">
+                <img 
+                    src="https://jayamu.com.br/site/wp-content/uploads/2021/05/planta_baixa_1_jardim_petropolis.jpeg" 
+                    alt="Nossa Casa - Planta 2" 
+                    class="side-image" 
+                    style="height: 455px; object-fit: cover; border-radius: 10px;">
+            </div>
+            <p>
+                Este site é para compartilhar com você, meu amor, como imagino nossa casa. 
+                Aqui você pode explorar os itens que vão compor nosso lar, desde o terreno 
+                até os acabamentos. Vamos sonhar juntos!
+            </p>
+        </section>
+
+        <!-- Primeira Calculadora -->
+        <section class="calculator">
+            <h2>Itens Principais</h2>
+            <form id="calculatorForm1">
+                <label>
+                    <input type="checkbox" class="item" data-value="135000">
+                    Terreno - R$ 135.000,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="135000">
+                    Casa 53m² - R$ 135.000,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="148700">
+                    Casa 58m² - R$ 148.700,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="17500">
+                    Arrimo - R$ 17.500,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="12000">
+                    Documentação - R$ 12.000,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="16500">
+                    Muros Laterais - R$ 16.500,00
+                </label>
+            </form>
+            <div class="total">
+                <h3>Total (Itens Principais): R$ <span id="total1">0,00</span></h3>
+            </div>
+        </section>
+
+        <!-- Segunda Calculadora -->
+        <section class="calculator">
+            <h2>Itens Adicionais</h2>
+            <form id="calculatorForm2">
+                <label>
+                    <input type="checkbox" class="item" data-value="2300">
+                    Porta sala 2m - R$ 2.300,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="600">
+                    Pedra no banheiro - R$ 600,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="180">
+                    Nicho banheiro - R$ 180,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="1200">
+                    Pia cozinha - R$ 1.200,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="800">
+                    Parte elétrica - R$ 800,00
+                </label>
+                <label>
+                    <input type="checkbox" class="item" data-value="200">
+                    Padrão 220v Cemig - R$ 200,00
+                </label>
+            </form>
+            <div class="total">
+                <h3>Total (Itens Adicionais): R$ <span id="total2">0,00</span></h3>
+            </div>
+        </section>
+
+        <!-- Total Geral -->
+        <div class="total overall">
+            <h2>Total Geral: R$ <span id="overallTotal">0,00</span></h2>
+        </div>
+    </main>
+
+    <footer>
+        <p>Com amor, feito para você ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
